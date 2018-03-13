@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Marker from "./components/Marker";
+import { Marker } from "./components";
 const locations = [
   { lat: -25.363, lng: 131.044, title: "hello" },
   { lat: 28.7041, lng: 77.1025, title: "Delhi" }
