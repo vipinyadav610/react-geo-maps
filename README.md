@@ -52,8 +52,8 @@ export default App;
 
 ## Props
 
-| Prop       |  Type  |      Required      | Description            |
-| ---------- | :----: | :----------------: | ---------------------- |
-| [`apikey`] | string | :white_check_mark: |                        | Your `Google Maps API` Key |
-| [`zoom`]   | number | :white_check_mark:  | Set the map zoom level |
-| [`center`] | object | :white_check_mark: | Default Center         |
+| Prop       |  Type  |      Required      | Description                |
+| ---------- | :----: | :----------------: | -------------------------- |
+| [`apikey`] | string | :white_check_mark: | Your `Google Maps API` Key |
+| [`zoom`]   | number | :white_check_mark  | Set the map zoom level     |
+| [`center`] | object | :white_check_mark: | Default Center             |
