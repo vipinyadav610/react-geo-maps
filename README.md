@@ -1,6 +1,6 @@
 # React Google map
 
-A React component to integrate Google Maps on your website
+A React component to integrate Google Maps
 
 ### Installation
 
