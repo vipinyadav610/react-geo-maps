@@ -52,17 +52,8 @@ export default App;
 
 ## Props
 
-| Prop                                                    |   Type   |      Required      | Description                                                                                  |
-| ------------------------------------------------------- | :------: | :----------------: | -------------------------------------------------------------------------------------------- |
-| [`inputProps`](#inputProps)                             |  object  | :white_check_mark: | Arbitrary props to input element, `value` and `onChange` are required keys                   |
-| [`renderSuggestion`](#renderSuggestion)                 | function |                    | Functional react component to render dropdown list item                                      |
-| [`renderFooter`](#renderFooter)                         | function |                    | Functional react component to render footer at the bottom of the dropdown list               |
-| [`classNames`](#classNames)                             |  object  |                    | Pass CSS classes to rendered elements                                                        |
-| [`styles`](#styles)                                     |  object  |                    | Pass CSS styles to rendered elements                                                         |
-| [`onSelect`](#onSelect)                                 | function |                    | Event handler to handle user's select event                                                  |
-| [`onEnterKeyDown`](#onEnterKeyDown)                     | function |                    | Event handler that gets called when user presses Enter key while input is focused            |
-| [`onError`](#onError)                                   | function |                    | Error handler function that gets called when Google Maps API responds with an error          |
-| [`options`](#options)                                   |  object  |                    | Options to Google Maps API (i.e. bounds, radius)                                             |
-| [`debounce`](#debounce)                                 |  number  |                    | Number of milliseconds to delay before making a call to Google Maps API                      |
-| [`highlightFirstSuggestion`](#highlightFirstSuggestion) | boolean  |                    | If set to `true`, first list item in the dropdown will be automatically highlighted          |
-| [`shouldFetchSuggestions`](#shouldFetchSuggestions)     | function |                    | Component will fetch suggestions from Google Maps API only when this function returns `true` |
+| Prop       |  Type  |      Required      | Description            |
+| ---------- | :----: | :----------------: | ---------------------- |
+| [`apikey`] | string | :white_check_mark: |                        | Your `Google Maps API` Key |
+| [`zoom`]   | number | :white_check_mark  | Set the map zoom level |
+| [`center`] | object | :white_check_mark: | Default Center         |
