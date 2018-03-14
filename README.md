@@ -7,26 +7,26 @@ A React component to integrate Google Maps
 To install the stable version
 
 ```sh
-yarn add google-map123
+yarn add react-geo-maps
 ```
 
 or
 
 ```sh
-npm install google-map123 --save
+npm install react-geo-maps --save
 ```
 
 Google Maps marker is imported as
 
 ```js
-import { Marker } from "google-map123";
+import { Marker } from "react-geo-maps";
 ```
 
 Create your component
 
 ```js
 import React, { Component } from "react";
-import { Marker } from "google-map123";
+import { Marker } from "react-geo-maps";
 const locations = [
   { lat: -25.363, lng: 131.044, title: "Australia" },
   { lat: 28.7041, lng: 77.1025, title: "Delhi" }
