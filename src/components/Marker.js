@@ -11,23 +11,43 @@ class Marker extends Component {
   }
 
   initMap = () => {
-    const { zoom, center, locations } = this.props;
+    const { zoom, center, locations, draggable, onDropMarker } = this.props;
     const map = new window.google.maps.Map(document.getElementById("map"), {
       zoom,
       center
     });
-    for (let location of locations) {
-      new window.google.maps.Marker({
+    let marker;
+    if (Array.isArray(locations))
+      for (let location of locations) {
+        marker = new window.google.maps.Marker({
+          map: map,
+          draggable,
+          position: location,
+          title: location.title
+        });
+        if (draggable) {
+          marker.addListener("dragend", onDropMarker);
+        }
+      }
+    else {
+      marker = new window.google.maps.Marker({
         map: map,
-        position: location,
-        title: location.title
+        draggable,
+        position: locations,
+        title: locations.title
       });
+      if (draggable) {
+        marker.addListener("dragend", onDropMarker);
+      }
     }
   };
   render() {
     const { height, width } = this.props;
     return (
-      <div id="map" style={{ height: `${height}px`, width: `${width}px` }} />
+      <div
+        id="map"
+        style={{ height: `${height}px`, width: width ? `${width}` : "100%" }}
+      />
     );
   }
 }

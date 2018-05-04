@@ -6,6 +6,9 @@ const locations = [
 ];
 
 class App extends Component {
+  onDropMarker = e => {
+    console.log(e.latLng.lat());
+  };
   render() {
     return (
       <Marker
@@ -14,7 +17,8 @@ class App extends Component {
         center={{ lat: -28.024, lng: 140.887 }}
         locations={locations}
         height={500}
-        width={500}
+        draggable={true}
+        onDropMarker={this.onDropMarker}
       />
     );
   }

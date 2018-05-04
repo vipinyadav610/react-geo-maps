@@ -58,5 +58,5 @@ export default App;
 | [`zoom`]      | number | :white_check_mark: | Set the map zoom level     |
 | [`center`]    | object | :white_check_mark: | Default Center             |
 | [`locations`] | array  | :white_check_mark: | Multiple Location          |
-| [`width`]     | number | :white_check_mark: | Width of map               |
+| [`width`]     | number |                    | Width of map               |
 | [`height`]    | number | :white_check_mark: | Height of map              |
