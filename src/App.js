@@ -8,6 +8,7 @@ const locations = [
 class App extends Component {
   onDropMarker = e => {
     console.log(e.latLng.lat());
+    console.log(e.latLng.lng());
   };
   render() {
     return (

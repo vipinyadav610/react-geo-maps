@@ -57,6 +57,8 @@ export default App;
 | [`apikey`]    | string | :white_check_mark: | Your `Google Maps API` Key |
 | [`zoom`]      | number | :white_check_mark: | Set the map zoom level     |
 | [`center`]    | object | :white_check_mark: | Default Center             |
-| [`locations`] | array  | :white_check_mark: | Multiple Location          |
+| [`locations`] | array or object  | :white_check_mark: | Multiple Location          |
 | [`width`]     | number |                    | Width of map               |
 | [`height`]    | number | :white_check_mark: | Height of map              |
+| [`draggable`]    | boolean |  | dragable marker   |
+| [`onDropMarker`]    | function |  | onDropMarker marker event   |

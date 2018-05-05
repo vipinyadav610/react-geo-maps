@@ -1,13 +1,36 @@
 {
-  "name": "google-map123",
+  "name": "react-geo-maps",
   "version": "0.1.0",
+  "main": "dist/index.js",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
+  "keywords": [
+    "react",
+    "reactjs",
+    "google",
+    "map",
+    "maps",
+    "render",
+    "component",
+    "javascript",
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipinyadav610/google-map-react.git"
+  },
+  "author": "https://github.com/vipinyadav610",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vipinyadav610/google-map-react/issues"
+  },
+  "homepage": "https://github.com/vipinyadav610/google-map-react/blob/master/README.md",
   "scripts": {
     "start": "react-scripts start",
+    "build-pkg": "webpack --config ./webpack.config.js --progress --colors --mode production",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
